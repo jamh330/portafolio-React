@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+
+import React, { useState } from 'react';
+import UserProfile from './components/UserProfile';
+import Navbar from './components/Navbar';
+import AboutSection from './components/about/AboutSection';
+import ContactSection from './components/contact/ContactSection';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
+      <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+      <Routes>
+        <Route path="" element={<UserProfile darkMode={darkMode} />} />
+        <Route path="/about" element={<AboutSection darkMode={darkMode} />} />
+        <Route path="/contact" element={<ContactSection darkMode={darkMode} />} />
+      </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
