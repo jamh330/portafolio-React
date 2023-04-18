@@ -7,6 +7,8 @@
   height: 100vh;
 }
 
+
+
 .card {
   display: flex;
   flex-direction: column;
@@ -72,4 +74,79 @@
   background-color: #6c757d;
   color: #ffffff;
   font-size: 0.875rem;
+}
+
+
+ .dark {
+    background-color: #333;
+  }
+
+  .dark .card {
+    background-color: #585656;
+  } 
+
+  .dark .name {
+    color: #ffffff;
+  }
+
+  .dark .title {
+    color: #ffffff;
+  }
+
+  .dark .contact_item {
+    color: #ffffff;
+  }
+
+  .dark .contact_icon {
+    fill: #ffffff;
+  }
+
+  .dark .description {
+    color: #ffffff;
+  }
+
+  .dark .skill {
+    background-color: #6c757d;
+  }
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .profile_image {
+    width: 75px;
+    height: 75px;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .contact_item {
+    font-size: 0.875rem;
+  }
+
+  .contact_icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
+
+  .skills {
+    gap: 0.25rem;
+  }
+
+  .skill {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
 }

@@ -17,7 +17,7 @@ const UserProfile = ({ darkMode }) => {
   ];
 
   return (
-    <div className={`content ${darkMode ? 'dark-mode' : ''}`}>
+    <div className={`content ${darkMode ? styles.dark : ''}`}>
     <div className={styles.container}>
       <div className={styles.card}>
         <img

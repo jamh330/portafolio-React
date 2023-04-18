@@ -1,19 +1,20 @@
 // src/components/ProjectsSection.js
 
 import React from 'react';
-import './AboutSection.css';
+import styles from '../../styles/ProjectsSection.module.css';
 
-function AboutSection() {
+
+function ProjectsSection({ darkMode }) {
   return (
-    <section className="projects-section">
+    <section className={`${styles.projectsSection} content ${darkMode ? styles.dark : ''}`}>
       <h2>Proyectos</h2>
-      <div className="projects-container">
+      <div className={`${styles.projectsContainer}`}>
         {/* Aquí puedes agregar tus proyectos y su información */}
-        <div className="project">
+        <div className={`${styles.project}`}>
           <h3>Proyecto 1</h3>
           <p>Descripción del proyecto 1...</p>
         </div>
-        <div className="project">
+        <div className={`${styles.project}`}>
           <h3>Proyecto 2</h3>
           <p>Descripción del proyecto 2...</p>
         </div>
@@ -23,4 +24,4 @@ function AboutSection() {
   );
 }
 
-export default AboutSection;
+export default ProjectsSection;

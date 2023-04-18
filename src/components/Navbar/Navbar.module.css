@@ -13,14 +13,40 @@
     right: 0;
     z-index: 100;
   }
+
+ a,ul, li a{
+    color: black;
+  }
   
   .dark {
-    background-color: #333;
+    background-color: #2c2c2c;
+  }
+
+  .dark a{
+    color: white !important;
+  }
+
+  .dark label{
+    color: white !important;
+  }
+
+.menuButton:hover{
+  background: initial !important;
+}
+
+
+  a {
+    text-decoration: none;
   }
   
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    
+  }
+
+  .logo{
+    width: 90px;
   }
   
   .menu_icon {
@@ -92,12 +118,6 @@
     margin-left: 0.5rem;
     vertical-align: middle;
   }
-  
-  /* src/components/Navbar.module.css */
-
-.navbar {
-  /* ... */
-}
 
 .menuButton {
   display: none;
@@ -126,8 +146,19 @@
     opacity: 0;
   }
 
+  .dark span{
+    background-color: white !important;
+  }
+
+  .dark ul{
+    background-color: #3e3c3c;
+    border-bottom: solid 2px white;
+    box-shadow: 0 6px 12px rgb(0 0 0);
+  }
+
   .menuButton {
     display: initial !important;
+    margin-top: initial !important;
   }
 
   .menu_icon {
@@ -190,4 +221,61 @@
 }
 
 /* ... */
+
+/* src/components/Navbar.module.css */
+
+.switch {
+  display: inline-block;
+  position: relative;
+}
+
+.switch_input {
+  display: none;
+}
+
+.switch_label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch_label::before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.switch_input:checked + .switch_label {
+  background-color: #4caf50;
+}
+
+.switch_input:checked + .switch_label::before {
+  transform: translateX(30px);
+}
+
+/* src/components/Navbar.module.css */
+
+.moon_icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  transition: all 0.3s;
+}
+
+.switch_input:checked + .switch_label .moon_icon {
+  transform: translateX(30px);
+}
+
 

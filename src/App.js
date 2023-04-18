@@ -3,9 +3,10 @@
 import React, { useState } from 'react';
 import UserProfile from './components/UserProfile';
 import Navbar from './components/Navbar';
-import AboutSection from './components/about/AboutSection';
-import ContactSection from './components/contact/ContactSection';
+import AboutSection from './components/projects/ProjectsSection.js';
+import ContactSection from './components/contact/ContactSection.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ProjectsSection from './components/projects/ProjectsSection.js';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -18,7 +19,7 @@ function App() {
       <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       <Routes>
         <Route path="" element={<UserProfile darkMode={darkMode} />} />
-        <Route path="/about" element={<AboutSection darkMode={darkMode} />} />
+        <Route path="/projects" element={<ProjectsSection darkMode={darkMode} />} />
         <Route path="/contact" element={<ContactSection darkMode={darkMode} />} />
       </Routes>
     </div>
