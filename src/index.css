@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+section {
+  background: #efefef;
+  padding: 0rem 2rem 2rem 2rem;
+  overflow: auto;
+  flex-grow: 1;
+  margin-left: 230px;
+}
+
+.active {
+  font-weight: bold;
+  color: #000 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+  text-decoration-thickness: 5px!important;
+  text-decoration-color: #b042b4 !important;
+  text-underline-offset: 6px !important;
+  transition: all .3s;
+}
+
+
+
+.dark{
+  background-color: #333;
+}
+
+.dark :is(h1,h2,h3){
+  color: #ebebeb;
+}
+
+.dark :is(h4,h5){
+  color: #c7c7c7;
+}
+
+.dark :is(p,span){
+  color: #e8e6e6;
+}
+
+
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 80px;
+  }
+  section {
+    margin-left: inherit;
+  }
+  
+}
+

@@ -1,49 +1,26 @@
 /* src/components/ProjectsSection.css */
 
-.projectsSection {
-  padding: 2rem;
-  height: 100vh; /* Ajusta la altura al 100% de la altura de la pantalla */
-  /* Agrega la propiedad 'overflow' para manejar el contenido que sobrepasa la altura de la sección */
-  overflow: auto;
-  margin-top: 80px;
-}
 
-  
-  .dark {
-    background-color: #333;
-  }
-
-
-.projectsContainer {
+.projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  padding: 24px;
+  gap: 24px;
 }
 
-.project {
-  flex: 1;
-  min-width: 300px;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+.dark  {
+
 }
 
-.dark .project {
-  background-color: #444;
-  color: white;
-}
 
-.dark h2{
-  color: white;
-}
 
 @media (max-width: 768px) {
   .projectsContainer {
     flex-direction: column;
   }
-  .projectsSection {
-    margin-top: 30px !important;
+  .projects {
+    padding: 0;
   }
 }
 

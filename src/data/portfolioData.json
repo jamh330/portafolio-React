@@ -1,0 +1,36 @@
+
+{
+    "titleMain":"Portafolio",
+    "name": "Juanita Pérez",
+    "mail":"juanita.perez@ejemplo.com",
+    "git":"github.com/juanitaperez",
+    "tecnologias":[
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Angular",
+        "SQL",
+        "Git"
+    ],
+    "profesion":"Ingeniera de Software",
+    "about": "Apasionada por crear soluciones de software elegantes y eficientes. Experiencia en varios lenguajes de programación y tecnologías. Me gusta aprender cosas nuevas y compartir conocimiento con otros.",
+    "projects": [
+      {
+        "title": "Proyecto 1",
+        "description": "Descripción del proyecto 1...",
+        "technologies": ["React", "Node.js"]
+      },
+      {
+        "title": "Proyecto 2",
+        "description": "Descripción del proyecto 2...",
+        "technologies": ["Angular", "Firebase"]
+      }
+    ],
+    "contact": {
+      "email": "tuemail@example.com",
+      "phone": "+1234567890"
+    }
+  }
+  

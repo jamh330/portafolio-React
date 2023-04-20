@@ -1,14 +1,5 @@
 /* src/styles/UserProfile.module.css */
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-
-
 .card {
   display: flex;
   flex-direction: column;
@@ -111,7 +102,6 @@
 
 @media screen and (max-width: 768px) {
   .card {
-    width: 100%;
     padding: 1rem;
   }
 

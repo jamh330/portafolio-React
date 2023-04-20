@@ -1,12 +1,5 @@
 /* src/components/Contact.module.css */
 
-.projectsSection {
-  padding: 2rem;
-  height: 100vh; /* Ajusta la altura al 100% de la altura de la pantalla */
-  /* Agrega la propiedad 'overflow' para manejar el contenido que sobrepasa la altura de la sección */
-  overflow: auto;
-  margin-top: 80px;
-}
 
 .dark h2{
   color: white;
