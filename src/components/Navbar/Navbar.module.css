@@ -65,6 +65,7 @@
   .logo {
     width: 110px;
     margin-right: 20px;
+    transition: transform 0.5s ease-in-out;
   }
 
   .titleMain {
@@ -179,7 +180,7 @@
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   .switch_label {
-margin-top: 30px !important;
+margin-top: 5px !important;
   }
   
 
@@ -188,7 +189,7 @@ margin-top: 30px !important;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 16px rgb(0 0 0 / 44%);
     position: fixed;
     top: 0;
     left: 0;
@@ -211,7 +212,7 @@ margin-top: 30px !important;
     background-color: #ebe0eb;
     flex-direction: column;
     width: 100%;
-    gap: 0.9rem;
+    gap: 1.5rem;
     padding: 1rem 0rem 1rem 0rem;
     box-shadow: 0 6px 11px rgb(0 0 0 / 46%);
     transition: all .3s !important;
@@ -367,3 +368,6 @@ margin-top: 30px !important;
 }
 
 
+.rotate {
+  transform: rotate(360deg);
+}

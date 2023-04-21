@@ -16,6 +16,13 @@ code {
   height: 100vh;
 }
 
+@media screen and (max-width: 768px) {
+  .App {
+    max-height: 92vh;
+  }
+}
+
+
 section {
   background: #efefef;
   padding: 0rem 2rem 2rem 2rem;
@@ -63,5 +70,9 @@ section {
     margin-left: inherit;
   }
   
+}
+
+.adjustMovil {
+  height: 150px !important;
 }
 

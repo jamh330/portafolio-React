@@ -8,6 +8,7 @@ import portfolioData from '../../data/portfolioData.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBlog ,faHome,faEnvelope,faTasks ,faCodeBranch,faWrench} from '@fortawesome/free-solid-svg-icons';
 
+
 const Navbar = ({ toggleDarkMode, darkMode }) => {
 
   const location = useLocation();
@@ -16,6 +17,10 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const scrollTop = () => {
+    document.querySelector('section').scrollTo(0, 0);
+  }
   
 //agregar iconos
   const menuItems = [
@@ -28,20 +33,32 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
   ];
 
   const activeIndex = menuItems.findIndex(item => item.path === location.pathname);
+
+  const [isRotating, setIsRotating] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsRotating(!isRotating);
+  };
  
   return (
     <nav className={`${styles.navbar} ${darkMode ? styles.dark : ''}`}>
-      <Link to="/" onClick={() => {setMenuOpen(false)}}>
-        <img src={Logo} alt="Logo" border="0" className={styles.logo}></img>
+      <Link to="/" onClick={() => {setMenuOpen(false);scrollTop()}}>
+        <img 
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseEnter}
+          src={Logo} 
+          alt="Logo" 
+          border="0" 
+          className={`${styles.logo}  ${isRotating ? styles.rotate : ''}`}/>
       </Link>
       <div className={styles.titleMain}>
-        <Link to="/" className="projects-button" onClick={() => {setMenuOpen(false)}}>
+        <Link to="/" className="projects-button" onClick={() => {setMenuOpen(false);scrollTop()}}>
           {portfolioData.titleMain}
         </Link>
       </div>
       <button
         className={`${styles.menuButton} ${menuOpen ? styles.open : ''}`}
-        onClick={handleMenuClick}
+        onClick={()=>{handleMenuClick();handleMouseEnter()}}
       >
         <div className={styles.menu_icon} onClick={handleMenuClick}>
           <span className={`${styles.bar3} ${menuOpen ? styles.cross3 : ''}`}></span>
@@ -61,7 +78,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
             </span>
             <Link 
               to={item.path} 
-              onClick={() => {setMenuOpen(false)}}
+              onClick={() => {setMenuOpen(false);scrollTop()}}
               className={`projects-button  ${index === activeIndex ? 'active' : ''}`} 
             >
               {item.name}

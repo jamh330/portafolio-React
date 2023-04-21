@@ -3,14 +3,15 @@
     "titleMain":"Portafolio",
     "name": "Juanita Pérez",
     "mail":"juanita.perez@ejemplo.com",
-    "git":"github.com/juanitaperez",
+    "git":"jamh330",
     "tecnologias":[
         "HTML",
         "CSS",
         "JavaScript",
-        "React",
         "Node.js",
+        "React",
         "Angular",
+        "Ionic",
         "SQL",
         "Git"
     ],

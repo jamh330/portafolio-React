@@ -1,46 +1,50 @@
 .card {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    padding: 20px;
-    background-color: white;
-    text-align: center;
-    margin: 20px;
-    flex-basis: 45%;
-    max-width: 300px;
-    min-width: 200px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-basis: 45%;
+  margin: 20px;
+  max-width: 300px;
+  min-width: 200px;
+  padding: 20px;
+  text-align: center;
+  }
+  
+  .card.dark {
+  background-color: #444;
+  border: solid 1px #9b9b9b;
+  }
+  
+  .card.dark h3 {
+  color: #fc00e3;
   }
 
-  .dark{
-    background-color: #444;
-    border:solid 1px #9b9b9b;
-  }
-
-  .dark h3{
-    color: #fc00e3;
+  .card.dark .description{
+    color: #ffffff;
   }
   
-  .icon {
-    font-size: 40px;
-    margin-bottom: 20px;
+  .card .icon {
+  font-size: 40px;
+  margin-bottom: 20px;
   }
   
-  .title {
-    margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 18px;
+  .card .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
   }
   
-  .description {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #666;
+  .card .description {
+  color: #080808;
+  font-size: 14px;
+  line-height: 1.5;
   }
   
   @media (max-width: 768px) {
-    .card {
-      flex-basis: 100%;
-      max-width: 100%;
-      margin: 10px;
-    }
+  .card {
+  flex-basis: 100%;
+  margin: 10px;
+  max-width: 100%;
+  }
   }
   
