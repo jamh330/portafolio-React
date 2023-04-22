@@ -76,10 +76,11 @@ section {
     margin-left: inherit;
     height: 95%;
   }
+  .adjustMovil {
+    height: 50px;
+  }
   
 }
 
-.adjustMovil {
-  height: 150px !important;
-}
+
 

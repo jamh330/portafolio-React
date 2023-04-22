@@ -1,5 +1,3 @@
-// src/components/Navbar/index.js
-
 import React, { useState,useEffect } from 'react';
 import styles from './Navbar.module.css';
 import { useLocation, Link } from 'react-router-dom';
@@ -22,7 +20,6 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
     document.querySelector('section').scrollTo(0, 0);
   }
   
-//agregar iconos
   const menuItems = [
     { name: 'Inicio', path: '/', icon:faHome },
     { name: 'Proyectos', path: '/projects', icon:faTasks  },

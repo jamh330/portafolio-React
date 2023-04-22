@@ -19,13 +19,13 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
   };
 
   const scrollTop = () => {
-    document.querySelector('section').scrollTo(0, 0);
+    
   }
   
 //agregar iconos
   const menuItems = [
     { name: 'Inicio', path: 'Inicio', icon:faHome },
-    { name: 'Proyectos', path: '/#Proyectos', icon:faTasks  },
+    { name: 'Proyectos', path: '#Proyectos', icon:faTasks  },
     { name: 'Servicios', path: 'Servicios', icon:faWrench },
     { name: 'Repositorios', path: 'Repositorios', icon:faCodeBranch   },
     { name: 'Blog', path: 'Blog', icon:faBlog },
@@ -104,7 +104,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
               <FontAwesomeIcon icon={item.icon} />
             </span>
             <Link 
-              to={item.path} 
+              to={item.path}
               onClick={() => {setMenuOpen(false);scrollTop()}}
               className={`projects-button  ${index === activeIndex ? 'active' : ''}`} 
             >
