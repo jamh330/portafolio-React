@@ -11,6 +11,11 @@
   position:fixed;
 }
 
+.imgLogoHome{
+  display: block;
+  text-align: center;
+}
+
 .menu_item a {
   text-decoration: none;
   color: #333;
@@ -71,9 +76,27 @@
   .titleMain {
     font-size: 1.5rem;
     font-weight: bold;
-    width: 90px;
     margin-right: 10px;
   }
+
+  .titleMain a{
+    display: grid;
+    text-align: center;
+  }
+
+  .titleMain a span{
+    background: none;
+  }
+
+  .titleFirst{
+    font-size: 1.8rem;
+    color: #b042b4;
+    font-weight: 400;
+}
+  .titleSecond{
+    font-size: 1.3rem;
+  }
+  
 
   
   .menu_icon {
@@ -179,6 +202,97 @@
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
+
+  .miniNav{
+    height: 0px !important;;
+    padding: 0 !important;;
+  }
+  
+  .miniNav img{
+    display: none;
+  }
+  
+  .miniNav .menuButton{
+    transform: scale3d(1.5, 1.5, 1.5);
+    box-shadow: 0 1px 16px rgb(0 0 0 / 44%);
+    display: block !important;
+    height: 60px;
+    position: fixed;
+    right: 16px;
+    top: 14px;
+    background-color: white !important;
+    z-index: 2;
+  }
+  
+  .miniNav .menuButton.open{
+    right: 16px !important;
+    left: auto;
+  }
+  
+  .miniNav .titleMain{
+    display: none;
+  }
+  
+  .miniNav .menu{
+    z-index: 1;
+    margin-top: 0px;
+  }
+  
+  .miniButton{
+    transform: inherit !important;
+  }
+  
+  .miniButton.open{
+    left: auto;
+  }
+  
+  .miniNav.dark .menuButton.open .cross1{
+    background: #333 !important;
+  }
+  
+  .miniNav.dark .menuButton.open .cross2{
+    background: #333 !important;
+  }
+  
+  .miniNav.dark .menuButton.open .cross3{
+    background: #333 !important;
+  }
+  
+  .dark .miniButton.open .cross1{
+    background: #333 !important;
+  }
+  
+  .dark .miniButton.open .cross2{
+    background: #333 !important;
+  }
+  
+  .miniNav.dark .menuButton .bar1{
+    background: #333 !important;
+  }
+  
+  .miniNav.dark .menuButton .bar2{
+    background: #333 !important;
+  }
+  
+  .miniNav.dark .menuButton .bar3{
+    background: #333 !important;
+  }
+  
+  
+  .dark .miniButton .bar1{
+    background: #333 !important;
+  }
+  
+  .dark .miniButton .bar2{
+    background: #333 !important;
+  }
+  
+  .dark .miniButton .bar3{
+    background: #333 !important;
+  }
+
+
+
   .switch_label {
 margin-top: 5px !important;
   }
@@ -219,7 +333,7 @@ margin-top: 5px !important;
   }
 
   .dark span{
-    background-color: white !important;
+    background-color: white;
   }
 
 
@@ -371,3 +485,5 @@ margin-top: 5px !important;
 .rotate {
   transform: rotate(360deg);
 }
+
+

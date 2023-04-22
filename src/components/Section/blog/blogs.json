@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Los mejores lenguajes de programación para aprender en 2022",
+        "excerpt": "Una lista con los lenguajes de programación más populares y recomendados para aprender en el próximo año.",
+        "categories": ["Programación"],
+        "image": "https://kinsta.com/wp-content/uploads/2021/03/the-most-popular-programming-languages-to-learn.png",
+        "date": "2022-01-01T00:00:00.000Z",
+        "author": "John Doe",
+        "category": "Programación",
+        "url": "/blog/mejores-lenguajes-de-programacion-2022/"
+    },
+    {
+        "title": "Cómo asegurar tu red WiFi en 2022",
+        "excerpt": "Consejos y trucos para proteger tu red WiFi de posibles ataques y hackers.",
+        "categories": ["Seguridad"],
+        "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitx1WksZjn8DZeoYnqjmNuO7b9UQH6Gyyv5zGPG0gH19PEeQZz9_Q7BzjiAHWC86M3M7LPgt2aQd4kMbggyzxNZ85NqWf57xVMZQSmp5l6kZY1lNh-Eh19jM8BKSXwa8BvlNE4nTW1dXGcKEWz2Rtv8kIBQOnij28dyMwiNAliaoc1PuzQWDGBc0zm/s1268/Wifi.webp",
+        "date": "2022-01-02T00:00:00.000Z",
+        "author": "Jane Smith",
+        "category": "Seguridad",
+        "url": "/blog/como-asegurar-red-wifi-2022/"
+    },
+    {
+        "title": "Las mejores herramientas para la productividad en 2022",
+        "excerpt": "Una lista con las mejores aplicaciones y herramientas para aumentar tu productividad en el trabajo.",
+        "categories": ["Productividad"],
+        "image": "https://brandemia.org/contenido/subidas/2022/10/herramientas-productividad-post-cover-software-1024x572.jpg",
+        "date": "2022-01-03T00:00:00.000Z",
+        "author": "Juan Pérez",
+        "category": "Productividad",
+        "url": "/blog/mejores-herramientas-productividad-2022/"
+    },
+    {
+        "title": "¿Qué es la inteligencia artificial?",
+        "excerpt": "Una introducción a la inteligencia artificial, sus aplicaciones y futuro.",
+        "categories": ["Inteligencia artificial"],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Artificial_Intelligence_%26_AI_%26_Machine_Learning_-_30212411048.jpg/1200px-Artificial_Intelligence_%26_AI_%26_Machine_Learning_-_30212411048.jpg",
+        "date": "2022-01-04T00:00:00.000Z",
+        "author": "Ana García",
+        "category": "Inteligencia artificial",
+        "url": "/blog/que-es-inteligencia-artificial/"
+    },
+    {
+        "title": "Cómo crear una página web desde cero",
+        "excerpt": "Una guía paso a paso para crear tu propia página web sin conocimientos previos.",
+        "categories": ["Desarrollo web"],
+        "image": "https://i.ytimg.com/vi/TC8bT7zTdoE/maxresdefault.jpg",
+        "date": "2022-01-05T00:00:00.000Z",
+        "author": "Pedro Martínez",
+        "category": "Desarrollo web",
+        "url": "/blog/como-crear-pagina-web-desde-cero/"
+    }
+]

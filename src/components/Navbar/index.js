@@ -1,6 +1,6 @@
 // src/components/Navbar/index.js
 
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import styles from './Navbar.module.css';
 import { useLocation, Link } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
@@ -39,10 +39,36 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
   const handleMouseEnter = () => {
     setIsRotating(!isRotating);
   };
+
+  useEffect(() => {
+    document.querySelector('section').addEventListener('scroll', handleScroll);
+    return () => {
+      document.querySelector('section').removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const [scrollChange, setscrollChange] = useState(false);
+  const [scroll2, setscroll2] = useState(false);
+
+  const handleScroll = () => {
+    const heigthElement= document.querySelector('section');
+
+    if(heigthElement.scrollTop > 30){
+      setscrollChange(true)
+      if(heigthElement.scrollTop > 50){
+        setscroll2(true)
+        return;
+      }
+      return;
+    }
+    
+    setscrollChange(false)
+    setscroll2(false)
+  };
  
   return (
-    <nav className={`${styles.navbar} ${darkMode ? styles.dark : ''}`}>
-      <Link to="/" onClick={() => {setMenuOpen(false);scrollTop()}}>
+    <nav className={`${scrollChange ? styles.miniNav : ''} ${styles.navbar} ${darkMode ? styles.dark : ''}`}>
+      <a href="/" onClick={() => {setMenuOpen(false);scrollTop()}} className={styles.imgLogoHome}>
         <img 
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseEnter}
@@ -50,14 +76,15 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
           alt="Logo" 
           border="0" 
           className={`${styles.logo}  ${isRotating ? styles.rotate : ''}`}/>
-      </Link>
+      </a>
       <div className={styles.titleMain}>
         <Link to="/" className="projects-button" onClick={() => {setMenuOpen(false);scrollTop()}}>
-          {portfolioData.titleMain}
+            <span className={styles.titleFirst}>Portafolio</span>
+            <span className={styles.titleSecond}>{portfolioData.name}</span>
         </Link>
       </div>
       <button
-        className={`${styles.menuButton} ${menuOpen ? styles.open : ''}`}
+        className={`${scroll2 ? styles.miniButton : ''} ${styles.menuButton} ${menuOpen ? styles.open : ''}`}
         onClick={()=>{handleMenuClick();handleMouseEnter()}}
       >
         <div className={styles.menu_icon} onClick={handleMenuClick}>
