@@ -3,10 +3,11 @@
 import React from 'react';
 import styles from '../../../styles/BlogSection.module.css';
 import BlogCard from '../../Structure/BlogCard/BlogCard';
-import blogsData from './blogs.json';
+import portfolioData from '../../../data/portfolioData.json';
 
 const BlogSection = ({ darkMode }) => {
-  const blogCards = blogsData.map((blog) => (
+  const data = portfolioData.blogExample;
+  const blogCards = data.map((blog) => (
     <BlogCard
       key={blog.title}
       title={blog.title}

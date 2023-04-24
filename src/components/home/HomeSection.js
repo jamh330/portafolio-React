@@ -13,7 +13,7 @@ const HomeSection = ({ darkMode }) => {
     config: { mass: 1, tension: 500, friction: 30 },
   });
 
-  const habilidades = portfolioData.tecnologias;
+  const skills = portfolioData.skills;
 
   return (
     <div className={`${darkMode ? styles.dark : ''}`}>
@@ -38,9 +38,9 @@ const HomeSection = ({ darkMode }) => {
           </div>
           <p className={styles.description}>{portfolioData.about}</p>
           <div className={styles.skills}>
-            {habilidades.map((habilidad, index) => (
+            {skills.map((skill, index) => (
             <div key={index} className={styles.skill}>
-              {habilidad}
+              {skill}
             </div>
             ))}
           </div>

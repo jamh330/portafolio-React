@@ -3,10 +3,12 @@
 import React from 'react';
 import styles from '../../../styles/ServicesSection.module.css';
 import ServiceCard from '../../Structure/ServiceCard/ServiceCard.js';
-import servicesData from './services.json';
+import portfolioData from '../../../data/portfolioData.json';
 
 function ServicesSection({ darkMode }) {
-  const services = servicesData.map((service, index) => (
+
+  const data = portfolioData.services;
+  const services = data.map((service, index) => (
     <ServiceCard
       key={index}
       title={service.title}

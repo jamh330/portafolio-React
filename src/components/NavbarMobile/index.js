@@ -53,9 +53,9 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
   const handleScroll = () => {
     const heigthElement= document.querySelector('section');
 
-    if(heigthElement.scrollTop > 30){
+    if(heigthElement.scrollTop > 900){
       setscrollChange(true)
-      if(heigthElement.scrollTop > 50){
+      if(heigthElement.scrollTop > 900){
         setscroll2(true)
         return;
       }

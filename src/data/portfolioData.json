@@ -1,10 +1,10 @@
 
 {
-    "titleMain":"Javi Marambio",
-    "name": "Juanita Pérez",
-    "mail":"juanita.perez@ejemplo.com",
-    "git":"jamh330",
-    "tecnologias":[
+    "titleMain" :"Juanita Pérez",
+    "name"      : "Juanita Pérez",
+    "mail"      :"juanita.perez@ejemplo.com",
+    "git"       :"userGit",
+    "skills":[
         "HTML",
         "CSS",
         "JavaScript",
@@ -15,20 +15,176 @@
         "SQL",
         "Git"
     ],
-    "profesion":"Ingeniera de Software",
-    "about": "Apasionada por crear soluciones de software elegantes y eficientes. Experiencia en varios lenguajes de programación y tecnologías. Me gusta aprender cosas nuevas y compartir conocimiento con otros.",
+    "profesion"   :"Ingeniera de Software",
+    "about"       : "Apasionada por crear soluciones de software elegantes y eficientes. Experiencia en varios lenguajes de programación y tecnologías. Me gusta aprender cosas nuevas y compartir conocimiento con otros.",
     "projects": [
       {
         "title": "Proyecto 1",
-        "description": "Descripción del proyecto 1...",
-        "technologies": ["React", "Node.js"]
+        "link": "https://proyecto1.com",
+        "description": "Descripción del proyecto 1.",
+        "technologies": ["React", "Node.js", "CSS"],
+        "features": ["Feature 1", "Feature 2", "Feature 3"]
       },
       {
         "title": "Proyecto 2",
-        "description": "Descripción del proyecto 2...",
-        "technologies": ["Angular", "Firebase"]
+        "link": "https://proyecto2.com",
+        "description": "Descripción del proyecto 2.",
+        "technologies": ["WordPress", "PHP", "MySQL"],
+        "features": ["Feature 1", "Feature 2", "Feature 3"]
+      },
+      {
+        "title": "Proyecto 3",
+        "link": "https://proyecto2.com",
+        "description": "Descripción del proyecto 3.",
+        "technologies": ["WordPress", "PHP", "MySQL"],
+        "features": ["Feature 1", "Feature 2", "Feature 3"]
+      },
+      {
+        "title": "Proyecto 4",
+        "link": "https://proyecto2.com",
+        "description": "Descripción del proyecto 4.",
+        "technologies": ["WordPress", "PHP", "MySQL"],
+        "features": ["Feature 1", "Feature 2", "Feature 3"]
+      },
+      {
+        "title": "Proyecto 5",
+        "link": "https://proyecto2.com",
+        "description": "Descripción del proyecto 5.",
+        "technologies": ["WordPress", "PHP", "MySQL"],
+        "features": ["Feature 1", "Feature 2", "Feature 3"]
+      },
+      {
+        "title": "Proyecto 6",
+        "link": "https://proyecto2.com",
+        "description": "Descripción del proyecto 6.",
+        "technologies": ["WordPress", "PHP", "MySQL"],
+        "features": ["Feature 1", "Feature 2", "Feature 3"]
       }
     ],
+    "services": [
+      {
+        "title": "Desarrollo Web",
+        "description": "Creación de sitios web y aplicaciones utilizando tecnologías modernas.",
+        "icon": "🌐"
+      },
+      {
+        "title": "WordPress",
+        "description": "Desarrollo de sitios web y tiendas en línea utilizando WordPress y WooCommerce.",
+        "icon": "📦"
+      },
+      {
+        "title": "Componentes personalizados",
+        "description": "Desarrollo de componentes personalizados en Node.js para proyectos específicos.",
+        "icon": "🛠️"
+      },
+      {
+        "title": "Optimización de rendimiento",
+        "description": "Mejora la velocidad y eficiencia de tu sitio web o aplicación para garantizar una experiencia de usuario óptima.",
+        "icon": "⚡"
+      },
+      {
+        "title": "Auditoría de accesibilidad",
+        "description": "Asegura que tu sitio web o aplicación sea accesible para todos, siguiendo las pautas de accesibilidad WCAG.",
+        "icon": "♿"
+      },
+      {
+        "title": "Integración de chatbots",
+        "description": "Implementa chatbots inteligentes para mejorar la atención al cliente y automatizar tareas en tu sitio web.",
+        "icon": "🤖"
+      },
+      {
+        "title": "Sistemas de agenda online",
+        "description": "Optimiza tu tiempo y gestiona tus citas de manera eficiente con nuestro servicio de creación de sistemas de agenda online.",
+        "icon": "📆"
+      },
+      {
+        "title": "Estrategias de SEO",
+        "description": "Optimiza tu sitio web para mejorar su posicionamiento en motores de búsqueda y atraer más tráfico orgánico.",
+        "icon": "🔍"
+      },
+      {
+        "title": "Diseño de interfaz de usuario (UI)",
+        "description": "Crea diseños atractivos y funcionales para mejorar la experiencia del usuario en tu sitio web o aplicación.",
+        "icon": "🎨"
+      },
+      {
+        "title": "Desarrollo de aplicaciones móviles",
+        "description": "Expande tu negocio creando aplicaciones móviles nativas para iOS y Android que se integren con tu sitio web.",
+        "icon": "📱"
+      },
+      {
+        "title": "Migración y actualización",
+        "description": "Actualiza y migra tu sitio web o aplicación a las últimas tecnologías y plataformas para mantenerla segura y eficiente.",
+        "icon": "🔄"
+      },
+      {
+        "title": "Marketing digital",
+        "description": "Crea y ejecuta estrategias de marketing digital para aumentar la visibilidad de tu negocio y captar nuevos clientes.",
+        "icon": "📈"
+      },
+      {
+        "title": "Integración de sistemas de pago",
+        "description": "Implementa soluciones de pago seguras y eficientes para facilitar las transacciones en línea en tu sitio web o aplicación.",
+        "icon": "💳"
+      },
+      {
+        "title": "Automatización de procesos",
+        "description": "Optimiza y automatiza procesos de negocio con soluciones personalizadas para ahorrar tiempo y recursos.",
+        "icon": "📊"
+      } 
+    ],
+    "blogExample":[
+      {
+          "title": "Los mejores lenguajes de programación para aprender en 2022",
+          "excerpt": "Una lista con los lenguajes de programación más populares y recomendados para aprender en el próximo año.",
+          "categories": ["Programación"],
+          "image": "https://kinsta.com/wp-content/uploads/2021/03/the-most-popular-programming-languages-to-learn.png",
+          "date": "2022-01-01T00:00:00.000Z",
+          "author": "John Doe",
+          "category": "Programación",
+          "url": "/blog/mejores-lenguajes-de-programacion-2022/"
+      },
+      {
+          "title": "Cómo asegurar tu red WiFi en 2022",
+          "excerpt": "Consejos y trucos para proteger tu red WiFi de posibles ataques y hackers.",
+          "categories": ["Seguridad"],
+          "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitx1WksZjn8DZeoYnqjmNuO7b9UQH6Gyyv5zGPG0gH19PEeQZz9_Q7BzjiAHWC86M3M7LPgt2aQd4kMbggyzxNZ85NqWf57xVMZQSmp5l6kZY1lNh-Eh19jM8BKSXwa8BvlNE4nTW1dXGcKEWz2Rtv8kIBQOnij28dyMwiNAliaoc1PuzQWDGBc0zm/s1268/Wifi.webp",
+          "date": "2022-01-02T00:00:00.000Z",
+          "author": "Jane Smith",
+          "category": "Seguridad",
+          "url": "/blog/como-asegurar-red-wifi-2022/"
+      },
+      {
+          "title": "Las mejores herramientas para la productividad en 2022",
+          "excerpt": "Una lista con las mejores aplicaciones y herramientas para aumentar tu productividad en el trabajo.",
+          "categories": ["Productividad"],
+          "image": "https://brandemia.org/contenido/subidas/2022/10/herramientas-productividad-post-cover-software-1024x572.jpg",
+          "date": "2022-01-03T00:00:00.000Z",
+          "author": "Juan Pérez",
+          "category": "Productividad",
+          "url": "/blog/mejores-herramientas-productividad-2022/"
+      },
+      {
+          "title": "¿Qué es la inteligencia artificial?",
+          "excerpt": "Una introducción a la inteligencia artificial, sus aplicaciones y futuro.",
+          "categories": ["Inteligencia artificial"],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Artificial_Intelligence_%26_AI_%26_Machine_Learning_-_30212411048.jpg/1200px-Artificial_Intelligence_%26_AI_%26_Machine_Learning_-_30212411048.jpg",
+          "date": "2022-01-04T00:00:00.000Z",
+          "author": "Ana García",
+          "category": "Inteligencia artificial",
+          "url": "/blog/que-es-inteligencia-artificial/"
+      },
+      {
+          "title": "Cómo crear una página web desde cero",
+          "excerpt": "Una guía paso a paso para crear tu propia página web sin conocimientos previos.",
+          "categories": ["Desarrollo web"],
+          "image": "https://i.ytimg.com/vi/TC8bT7zTdoE/maxresdefault.jpg",
+          "date": "2022-01-05T00:00:00.000Z",
+          "author": "Pedro Martínez",
+          "category": "Desarrollo web",
+          "url": "/blog/como-crear-pagina-web-desde-cero/"
+      }
+  ],
     "contact": {
       "email": "tuemail@example.com",
       "phone": "+1234567890"

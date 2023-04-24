@@ -26,7 +26,7 @@ function MobileNavigation() {
     { name: 'Servicios', path: '/services',title:'Servicios 🔧',subTitle:'Aquí podrás revisar el catalogo de servicios que ofrezco',"description":"Soluciones a medida para cada cliente, centradas en mejorar la experiencia del usuario. Nos especializamos en desarrollo web con WordPress y componentes personalizados en Node.js.",component:ServicesSection },
     { name: 'Repositorios', path: '/reposit',title:'Repositorios 👨‍💻',subTitle:'Repositorio de código para reutilizar en tus proyectos',"description":"Mis proyectos alojados en GitHub. En esta sección se pueden visualizar los diferentes proyectos, acceder a sus repositorios y conocer las tecnologías utilizadas.",component:RepoSection },
     { name: 'Blog', path: '/blog',title:'Blogs 📰',subTitle:'Encuentra noticias y novedades de informática',"description":"Espacio donde se comparten artículos y noticias relacionadas con un tema específico, en este caso, informática. Los artículos pueden cubrir una variedad de temas, como tendencias, noticias, tutoriales, consejos, opiniones y más.",component:BlogSection },
-    { name: 'Contacto', path: '/contact',title:'Contacto 📩',subTitle:'Tienes alguna duda? Escríbeme',"description":"",component:ContactSection },
+    { name: 'Contacto', path: '/contact',title:'Contacto 📩',subTitle:'Tienes alguna duda? Escríbeme',"description":"Ante cualquier consulta, comentario o solicitud que puedas tener escríbeme.",component:ContactSection },
   ];
   
   return (

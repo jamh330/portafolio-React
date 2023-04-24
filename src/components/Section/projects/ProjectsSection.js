@@ -3,12 +3,14 @@
 import React from 'react';
 import styles from '../../../styles/ProjectsSection.module.css';
 import ProjectCard from '../../Structure/ProjectCard/ProjectCard.js';
-import projectsData from './projects.json';
+import portfolioData from '../../../data/portfolioData.json';
 
 const ProjectsSection = ({ darkMode }) => {
 
+  const proyects = portfolioData.projects;
+
   const renderProjectCards = () => {
-    return projectsData.map((project) => (
+    return proyects.map((project) => (
     <ProjectCard
         key={project.title}
         title={project.title}

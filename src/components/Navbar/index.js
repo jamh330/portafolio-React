@@ -50,9 +50,9 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
   const handleScroll = () => {
     const heigthElement= document.querySelector('section');
 
-    if(heigthElement.scrollTop > 30){
+    if(heigthElement.scrollTop > 10){
       setscrollChange(true)
-      if(heigthElement.scrollTop > 50){
+      if(heigthElement.scrollTop > 100){
         setscroll2(true)
         return;
       }
@@ -92,6 +92,13 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
       </button>
 
       <ul className={`${styles.menu} ${menuOpen ? styles.open : ''}`}>
+      <img 
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseEnter}
+          src={Logo} 
+          alt="Logo" 
+          border="0" 
+          className={`${styles.logoMini}  ${isRotating ? styles.rotate : ''}`}/>
       {menuItems.map((item, index) => (
           <li
             key={index}

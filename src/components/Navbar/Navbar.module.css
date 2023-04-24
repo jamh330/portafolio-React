@@ -73,6 +73,12 @@
     transition: transform 0.5s ease-in-out;
   }
 
+  .logoMini{
+    width: 110px;
+    margin-right: 20px;
+    transition: transform 0.5s ease-in-out;
+  }
+
   .titleMain {
     font-size: 1.5rem;
     font-weight: bold;
@@ -200,16 +206,24 @@
   background: transparent !important;
 }
 
+.logoMini{
+  display: none;
+}
+
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
 
   .miniNav{
-    height: 0px !important;;
-    padding: 0 !important;;
+    height: 0px !important;
+    padding: 0 !important;
   }
   
-  .miniNav img{
+  .miniNav .logo{
     display: none;
+  }
+
+  .miniNav .logoMini{
+    display: block;
   }
   
   .miniNav .menuButton{
@@ -318,6 +332,12 @@ margin-top: 5px !important;
     margin-right: 0px;
   }
 
+  .niniLogo{
+    width: 110px;
+    margin-right: 20px;
+    transition: transform 0.5s ease-in-out;
+  }
+
   .menu {
     margin-top: 3px;
     position: absolute;
@@ -325,7 +345,8 @@ margin-top: 5px !important;
     left: -120%;
     background-color: #ebe0eb;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
+    height: 100vh;
     gap: 1.5rem;
     padding: 1rem 0rem 1rem 0rem;
     box-shadow: 0 6px 11px rgb(0 0 0 / 46%);
@@ -353,9 +374,7 @@ margin-top: 5px !important;
     display: initial !important;
   }
 
-  .menu-button {
-    display: flex !important;
-  }
+
   .open {
     display: flex;
     pointer-events: auto;
@@ -375,6 +394,14 @@ margin-top: 5px !important;
   background: transparent;
   border: none;
   cursor: pointer;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
 }
 
 .menuButton .bar {
