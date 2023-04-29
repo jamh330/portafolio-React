@@ -22,7 +22,7 @@ git clone https://github.com/jamh330/portafolio-React
 
 2. Navega hasta la carpeta del proyecto:
 
-cd my-react-app
+cd portafolio-React
 
 
 3. Instala las dependencias:
